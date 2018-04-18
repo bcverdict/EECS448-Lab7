@@ -19,6 +19,7 @@ void myTester::runTests()
 	Test6();
 	Test7();
 	Test8();
+	Test9();
 }
 void myTester::Test0()
 {
@@ -175,4 +176,12 @@ void myTester::Test8()
 	}
 	cout<<"Test 8: search returns true when searching for a value that already exists in the linked list: "<<str<<endl;
 }
-
+void myTester::Test9()
+{
+	string str = "PASSED";
+	if(m_temp.isEmpty())
+	{
+		str = "FAILED";
+	}
+	cout<<"Test9: isEmpty returns false when the list is not empty: "<<str<<endl;
+}

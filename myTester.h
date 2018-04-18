@@ -18,6 +18,7 @@ class myTester
 		void Test6();
 		void Test7();
 		void Test8();
+		void Test9();
 	private:
 		LinkedListOfInts& m_temp;
 };

@@ -1,4 +1,9 @@
 Bug:
+	isEmpty always returns true
+
+	Note:
+		This would cause test 9 to fail
+Bug:
 	After visualizing what happens to the list after an addBack call by converting the list to a vector it is then easy
 	to see that the addBack function is actually adding whatever is passed to the front of the list. The addBack function
 	is essentially an addFront function.
@@ -9,7 +14,9 @@ Bug:
 
 Bug:
 	After visualizing the linked list after calling both remove functions it appears they don't make any changes to the
-	list.
+	list. My best quess why this could be happening is that the remove functions are based off of the isEmpty function.
+	The remove functions may only be removing a node from the list if isEmpty returns false but since it never does then
+	the remve functions would make no changes
 
 	Note:
 		This would cause test 4 and 5 to fail since the size is not changing after the remove functions are called.					
