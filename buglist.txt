@@ -1,0 +1,15 @@
+Bug:
+	After visualizing what happens to the list after an addBack call by converting the list to a vector it is then easy
+	to see that the addBack function is actually adding whatever is passed to the front of the list. The addBack function
+	is essentially an addFront function.
+
+	Note:
+		This bug would cause test 3 to pass since it is only checking for size but it would fail test 7 since it is
+		checking for exact values.
+
+Bug:
+	After visualizing the linked list after calling both remove functions it appears they don't make any changes to the
+	list.
+
+	Note:
+		This would cause test 4 and 5 to fail since the size is not changing after the remove functions are called.					
